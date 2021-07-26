@@ -989,6 +989,11 @@
   resolved "https://registry.npmjs.org/@commitlint/execute-rule/-/execute-rule-12.1.4.tgz#9973b02e9779adbf1522ae9ac207a4815ec73de1"
   integrity sha512-h2S1j8SXyNeABb27q2Ok2vD1WfxJiXvOttKuRA9Or7LN6OQoC/KtT3844CIhhWNteNMu/wE0gkTqGxDVAnJiHg==
 
+"@commitlint/execute-rule@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-13.0.0.tgz#7823303b82b5d86dac46e67cfa005f4433476981"
+  integrity sha512-lBz2bJhNAgkkU/rFMAw3XBNujbxhxlaFHY3lfKB/MxpAa+pIfmWB3ig9i1VKe0wCvujk02O0WiMleNaRn2KJqw==
+
 "@commitlint/format@^12.1.4":
   version "12.1.4"
   resolved "https://registry.npmjs.org/@commitlint/format/-/format-12.1.4.tgz#db2d46418a6ae57c90e5f7f65dff46f0265d9f24"
@@ -1028,6 +1033,19 @@
     lodash "^4.17.19"
     resolve-from "^5.0.0"
 
+"@commitlint/load@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-13.1.0.tgz#d6c9b547551f2216586d6c1964d93f92e7b04277"
+  integrity sha512-zlZbjJCWnWmBOSwTXis8H7I6pYk6JbDwOCuARA6B9Y/qt2PD+NCo0E/7EuaaFoxjHl+o56QR5QttuMBrf+BJzg==
+  dependencies:
+    "@commitlint/execute-rule" "^13.0.0"
+    "@commitlint/resolve-extends" "^13.0.0"
+    "@commitlint/types" "^13.1.0"
+    chalk "^4.0.0"
+    cosmiconfig "^7.0.0"
+    lodash "^4.17.19"
+    resolve-from "^5.0.0"
+
 "@commitlint/message@^12.1.4":
   version "12.1.4"
   resolved "https://registry.npmjs.org/@commitlint/message/-/message-12.1.4.tgz#3895edcc0709deca5945f3d55f5ea95a9f1f446d"
@@ -1042,21 +1060,21 @@
     conventional-changelog-angular "^5.0.11"
     conventional-commits-parser "^3.0.0"
 
-"@commitlint/prompt-cli@^12.1.4":
-  version "12.1.4"
-  resolved "https://registry.npmjs.org/@commitlint/prompt-cli/-/prompt-cli-12.1.4.tgz#a0490c586ad15597f313a6397f1187d49e126dc1"
-  integrity sha512-wMAvn2TfJtw39GoPBQ0hIrT6EgJmtVa30ISEoW2SJ7dAOdDky9vIYRQ3eQYAWLYp2vIlt6/NmhEReCwkCj8Hcw==
+"@commitlint/prompt-cli@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-13.1.0.tgz#c9024a3a8b1990ae381d6c3b12db4a0a8b805d7d"
+  integrity sha512-XOZghmQJhkEGdeICufj7DihTxJPTO1QLCTM/mikTOzTJkUWBeRbiFSB6N41d069oX1uHB8M0+LeXep9tjxpo1g==
   dependencies:
-    "@commitlint/prompt" "^12.1.4"
+    "@commitlint/prompt" "^13.1.0"
     execa "^5.0.0"
 
-"@commitlint/prompt@^12.1.4":
-  version "12.1.4"
-  resolved "https://registry.npmjs.org/@commitlint/prompt/-/prompt-12.1.4.tgz#c87df6241087d6dd59d1ee7d83b31b0d7249db1e"
-  integrity sha512-kV8VX3iwq2Hxm17p8mzL8rACwow0F7VRisdgt9VMy1oTEqX4+7WVYGK5UrgD2nvxIDTe/zgbFQoEbluwTCtmGQ==
+"@commitlint/prompt@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-13.1.0.tgz#12db567bdcbaaa3aa8320657a018964d97b87cbb"
+  integrity sha512-Nq/oL4on3SYFHkrKDGef929cpyCDGd28kDxw4mjN26pYPvgdlpJU8tugvdzXD0UC9pniGhIo9xSYSC4HXzFfmw==
   dependencies:
-    "@commitlint/load" "^12.1.4"
-    "@commitlint/types" "^12.1.4"
+    "@commitlint/load" "^13.1.0"
+    "@commitlint/types" "^13.1.0"
     chalk "^4.0.0"
     lodash "^4.17.19"
     throat "^6.0.0"
@@ -1076,6 +1094,16 @@
   version "12.1.4"
   resolved "https://registry.npmjs.org/@commitlint/resolve-extends/-/resolve-extends-12.1.4.tgz#e758ed7dcdf942618b9f603a7c28a640f6a0802a"
   integrity sha512-R9CoUtsXLd6KSCfsZly04grsH6JVnWFmVtWgWs1KdDpdV+G3TSs37tColMFqglpkx3dsWu8dsPD56+D9YnJfqg==
+  dependencies:
+    import-fresh "^3.0.0"
+    lodash "^4.17.19"
+    resolve-from "^5.0.0"
+    resolve-global "^1.0.0"
+
+"@commitlint/resolve-extends@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-13.0.0.tgz#a38fcd2474483bf9ec6e1e901b27b8a23abe7d73"
+  integrity sha512-1SyaE+UOsYTkQlTPUOoj4NwxQhGFtYildVS/d0TJuK8a9uAJLw7bhCLH2PEeH5cC2D1do4Eqhx/3bLDrSLH3hg==
   dependencies:
     import-fresh "^3.0.0"
     lodash "^4.17.19"
@@ -1108,6 +1136,13 @@
   version "12.1.4"
   resolved "https://registry.npmjs.org/@commitlint/types/-/types-12.1.4.tgz#9618a5dc8991fb58e6de6ed89d7bf712fa74ba7e"
   integrity sha512-KRIjdnWNUx6ywz+SJvjmNCbQKcKP6KArhjZhY2l+CWKxak0d77SOjggkMwFTiSgLODOwmuLTbarR2ZfWPiPMlw==
+  dependencies:
+    chalk "^4.0.0"
+
+"@commitlint/types@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-13.1.0.tgz#12cfb6e932372b1816af8900e2d10694add28191"
+  integrity sha512-zcVjuT+OfKt8h91vhBxt05RMcTGEx6DM7Q9QZeuMbXFk6xgbsSEDMMapbJPA1bCZ81fa/1OQBijSYPrKvtt06g==
   dependencies:
     chalk "^4.0.0"
 
@@ -13901,10 +13936,8 @@ watchpack@^1.7.4:
   resolved "https://registry.npmjs.org/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
